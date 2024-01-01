@@ -2,10 +2,10 @@ MYSQL_PASSWORD=$1
 log_file=/tmp/expense.log
 
 Head() {
-echo -e "\e[35m$*\e[0m"
+echo -e "\e[36m$*\e[0m"
 }
 
-Head " Disabling Nodejs"
+Head Disabling Nodejs
 dnf module disable nodejs -y &>>log_file
 
 Head " Enabling Nodejs:18"
