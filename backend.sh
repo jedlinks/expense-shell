@@ -1,10 +1,4 @@
-MYSQL_PASSWORD=$1
-log_file=/tmp/expense.log
-
-Head() {
-echo -e "\e[36m$*\e[0m"
-}
-
+source common.sh
 Head Disabling Nodejs
 dnf module disable nodejs -y &>>log_file
 echo $?
