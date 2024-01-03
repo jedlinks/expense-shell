@@ -3,7 +3,6 @@ Head Disabling Nodejs
 dnf module disable nodejs -y &>>log_file
 Stat $?
 
-
 Head Enabling Nodejs:18
 dnf module enable nodejs:18 -y &>>log_file
 Stat $?
