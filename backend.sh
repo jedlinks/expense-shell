@@ -17,7 +17,10 @@ cp backend.service /etc/systemd/system/backend.service &>>log_file
 Stat $?
 
 Head Adding User
-useradd expense &>>log_file
+id expense &>>log_file
+if [ "$?" -ne 0 ]; then
+  useradd expense &>>log_file
+fi
 Stat $?
 
 Head Deleting Application Files and Installing Content
