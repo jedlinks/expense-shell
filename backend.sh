@@ -1,4 +1,3 @@
-source common.sh
 Head Disabling Nodejs
 dnf module disable nodejs -y &>>log_file
 Stat $?
